@@ -224,7 +224,7 @@ jobs:
         run: |
           echo -e "$(nproc) thread build."
           make -j$(nproc) V=s
-          make package/luci-theme-rosy/luci-theme-rosy/compile V=s
+          make luci-theme-rosy/luci-theme-rosy/compile V=s
 
       - name: Assemble artifact
         run: |
